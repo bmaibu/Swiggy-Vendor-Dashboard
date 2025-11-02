@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "dev": "cd dashboard && npm run dev"
+    },
+    "dependencies": {
+        "react-loader-spinner": "^8.0.0"
+    }
+}
