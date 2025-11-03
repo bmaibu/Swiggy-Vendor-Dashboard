@@ -628,8 +628,8 @@ h3 {
 
     .showPassword {
         position: absolute;
-        bottom: 105px;
-        right: 8%;
+        bottom: 140px;
+        right: 7%;
         font-size: 0.85rem;
     }
 
@@ -708,5 +708,193 @@ h3 {
     .product-table {
         min-width: 350px;
         font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+
+/* Initial Welcome Section Styles */
+.initialWelcomeSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%); */
+    min-height: calc(100vh - 140px);
+}
+
+.welcomeContent {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+.welcomeContent h2 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.welcomeImage {
+    margin: 20px 0;
+}
+
+.welcomeImage img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.welcomeMessage {
+    margin: 25px 0;
+}
+
+.welcomeMessage p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.stepsSection {
+    background: #f8f9fa;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.stepsSection h3 {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stepNumber {
+    background: #ff6b6b;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.stepContent {
+    font-size: 1rem;
+    color: #333;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.registerBtn, .loginBtn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.registerBtn {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    color: white;
+}
+
+.loginBtn {
+    background: transparent;
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+}
+
+.registerBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.loginBtn:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 768px) {
+    .initialWelcomeSection {
+        padding: 1px;
+        min-height: calc(100vh - 120px);
+    }
+
+    .welcomeContent {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .welcomeContent h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcomeImage img {
+        max-width: 200px;
+    }
+
+    .welcomeMessage p {
+        font-size: 1rem;
+    }
+
+    .stepsSection {
+        padding: 15px;
+    }
+
+    .step {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .stepNumber {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .actionButtons {
+        gap: 10px;
+    }
+
+    .registerBtn, .loginBtn {
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 }
