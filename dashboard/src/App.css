@@ -277,10 +277,436 @@ h3 {
     width: fit-content;
     position: absolute;
     bottom: 90px;
-    right: 135px;
+    right: 140px;
     cursor: pointer;
 }
 
 .loaderSection {
     z-index: 10000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add these media queries at the end of your App.css file */
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    .sideBarSection {
+        max-width: 20%;
+    }
+
+    .authForm {
+        max-width: 60%;
+    }
+
+    .tableForm {
+        max-width: 60%;
+    }
+
+    .product-table {
+        width: 90vw;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .navSection {
+        height: auto;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        font-size: medium;
+    }
+
+    .company {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .firmName {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .firmName h4 {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .userAuth {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Sidebar */
+    .sideBarSection {
+        max-width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .sideBarSection ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sideBarSection ul li {
+        width: 45%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #3d3360;
+        border-radius: 5px;
+        font-size: small;
+    }
+
+    /* Collection Section */
+    .collectionSection {
+        flex-direction: column;
+    }
+
+    /* Auth Forms */
+    .loginSection,
+    .registerSection {
+        padding: 20px 10px;
+        min-height: calc(100vh - 200px);
+    }
+
+    .authForm {
+        max-width: 90%;
+        margin-top: 20px;
+        padding: 20px 10px;
+    }
+
+    .authForm h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .authForm label {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .authForm input {
+        max-width: 90%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .showPassword {
+        position: absolute;
+        bottom: 140px;
+        right: 7%;
+        font-size: 0.9rem;
+    }
+
+    /* Firm Section */
+    .firmSection {
+        padding: 20px 10px;
+        margin-top: 0;
+    }
+
+    .tableForm {
+        max-width: 95%;
+        margin-top: 20px;
+        padding: 20px 10px;
+    }
+
+    .tableForm h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .tableForm input {
+        max-width: 95%;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .tableForm label {
+        max-width: 95%;
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+
+    /* Checkbox Inputs */
+    .checkInp {
+        max-width: 95%;
+        flex-direction: column;
+    }
+
+    .checkInp label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .inputsContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .checboxContainer {
+        max-width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .checboxContainer input {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .checboxContainer label {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .regBoxContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .regBoxContainer label {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .regBoxContainer input {
+        margin-left: 10px;
+    }
+
+    /* Button Submit */
+    .btnSubmit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btnSubmit button {
+        width: 8rem;
+        padding: 12px 0;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+
+    /* Products Table */
+    .productSection {
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+
+    .product-table {
+        width: 100%;
+        min-width: 500px;
+        font-size: 0.85rem;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 6px;
+    }
+
+    .product-table img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .deleteBtn {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    /* Welcome Section */
+    .welcomeSection {
+        padding: 20px 10px;
+    }
+
+    .welcomeSection h2 {
+        font-size: 1.8rem;
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .landingImage {
+        margin-top: 20px;
+    }
+
+    .landingImage img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Error Section */
+    .errorSection {
+        padding: 20px;
+    }
+
+    .errorSection h1 {
+        font-size: 3rem;
+    }
+
+    .errorSection p {
+        font-size: 1.2rem;
+    }
+
+    /* Loader Section */
+    .loaderSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .loaderSection p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+    .navSection {
+        padding: 10px 5px;
+        font-size: small;
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+
+    .firmName h4 {
+        font-size: 0.8rem;
+    }
+
+    .userAuth {
+        font-size: 0.8rem;
+    }
+
+    .sideBarSection ul li {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+    }
+
+    .authForm {
+        max-width: 95%;
+    }
+
+    .authForm h3 {
+        font-size: 1.3rem;
+    }
+
+    .authForm input {
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+
+    .showPassword {
+        position: absolute;
+        bottom: 105px;
+        right: 8%;
+        font-size: 0.85rem;
+    }
+
+    .tableForm {
+        max-width: 98%;
+    }
+
+    .tableForm h3 {
+        font-size: 1.2rem;
+    }
+
+    .tableForm input {
+        height: 2.2rem;
+        font-size: 0.95rem;
+    }
+
+    .checboxContainer label,
+    .regBoxContainer label {
+        font-size: 0.9rem;
+    }
+
+    .btnSubmit button {
+        width: 7rem;
+        padding: 10px 0;
+        font-size: 0.95rem;
+    }
+
+    .welcomeSection h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-table {
+        min-width: 400px;
+        font-size: 0.75rem;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 4px;
+    }
+
+    .deleteBtn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .errorSection h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 360px) {
+    .company {
+        font-size: 0.9rem;
+    }
+
+    .firmName h4 {
+        font-size: 0.7rem;
+    }
+
+    .sideBarSection ul li {
+        font-size: 0.75rem;
+        padding: 8px;
+    }
+
+    .authForm h3,
+    .tableForm h3 {
+        font-size: 1.1rem;
+    }
+
+    .welcomeSection h2 {
+        font-size: 1.2rem;
+    }
+
+    .product-table {
+        min-width: 350px;
+        font-size: 0.7rem;
+    }
 }

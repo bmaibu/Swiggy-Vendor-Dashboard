@@ -74,7 +74,7 @@ const Login = ({showWelcomeHandler}) => {
             <input   type={showPassword? "text":"password"} name='password' value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='enter your password'/><br />
             <span className='showPassword'
               onClick={handleShowPassword}
-              >{showPassword ? 'Hide.' : 'Show.'}</span>
+              >{showPassword ? 'Hide' : 'Show'}</span>
     <div className="btnSubmit">
         <button type= 'submit'>Submit</button>
     </div>
